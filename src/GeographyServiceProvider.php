@@ -1,8 +1,7 @@
 <?php
 
-namespace App\Providers;
+namespace Cocoyo\Geography;
 
-use Cocoyo\Geography\Geography;
 use Illuminate\Support\ServiceProvider;
 
 class GeographyServiceProvider extends ServiceProvider
