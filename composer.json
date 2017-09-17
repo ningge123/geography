@@ -1,0 +1,21 @@
+{
+    "name": "cocoyo/geography",
+    "description": "geographic position api",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "cocoyo",
+            "email": "2430114823@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "~5.3|~6.0"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "Cocoyo\\Geography\\" : "src/"
+        }
+    }
+}
