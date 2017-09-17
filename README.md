@@ -10,7 +10,23 @@
 composer require cocoyo/geography
 ``
 
-使用:
+laravel中使用:
+
+```
+ 在cofig/services.php中添加配置
+ 
+ 'baidu' => [
+         'ak' => '你的ak'
+     ],
+
+ Cocoyo\Geography\GeographyServiceProvider::class,注册服务提供者
+ 
+ app('geography')->position($ip);
+ 
+ 或者使用依赖注入形式使用
+```
+
+一般项目中使用:
 
 ```
 require './vendor/autoload.php';
@@ -45,3 +61,5 @@ Array
 
 )
 ```
+
+嗯！暂时还没做单元测试，后期补上。。
