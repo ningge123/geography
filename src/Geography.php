@@ -72,8 +72,13 @@ class Geography
      */
     private function getGeographyUrl($ip)
     {
+        $ak = $this->config->get('ak');
+        if (is_array($ak)) {
+            $ak = config('services.baidu.ak');
+        }
+
         $query = [
-            'ak' => $this->config->get('ak'),
+            'ak' => $ak,
             'ip' => $ip
         ];
 

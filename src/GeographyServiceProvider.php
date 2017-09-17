@@ -24,7 +24,7 @@ class GeographyServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('geography', function () {
-            return new Geography(config('services.baidu'));
+            return new Geography();
         });
     }
 }
